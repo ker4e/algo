@@ -23,23 +23,17 @@ int main()
 	{
 		std::cout << Fibonacci(arrayFibo, i) << ' ';
 	}
-
-
+	
 	delete[] arrayFibo;
-
 	return EXIT_SUCCESS;
 }
 
 int Fibonacci(int* arr, int n)
 {
-	if (n <= 0)return 0;
-	else if (n == 1) return 1;
+	if (n <= 1) { return n; }
 
-	if (arr[n] != -1)
-	{
-		return arr[n];
-	}
-
+	if (arr[n] != -1) { return arr[n]; }
+    
 	arr[n] = Fibonacci(arr, n - 1) + Fibonacci(arr, n - 2);
 	return arr[n];
 }
