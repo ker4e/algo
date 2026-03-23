@@ -6,12 +6,12 @@ int Fibonacci(std::vector<int>& arr, int n);
 int main()
 {
     int size = 25;
-    std::vector<int> arr(size, -1);
+    std::vector<int> arrFibo(size, -1);
 
     std::cout << "Fibonacci: ";
     for (int i = 0; i < size; ++i)
     {
-        std::cout << Fibonacci(arr, i) << " ";
+        std::cout << Fibonacci(arrFibo, i) << " ";
     }
 }
 
