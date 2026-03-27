@@ -68,7 +68,7 @@ void append_to_dynamic_array(int*& arr, int& logical_size, int& actual_size, int
         logical_size++;
     }
     else {
-        // увеличиваем массив
+        //увеличиваем массив
         int new_actual_size = actual_size * 2;
         int* new_arr = new int[new_actual_size];
 
@@ -77,10 +77,10 @@ void append_to_dynamic_array(int*& arr, int& logical_size, int& actual_size, int
         }
         new_arr[logical_size] = value;
 
-        // освобождаем старую память
+        //освобождаем старую память
         delete[] arr;
 
-        // переназначаем указатель
+        //переназначаем указатель
         arr = new_arr;
 
         logical_size++;
