@@ -18,8 +18,8 @@ int main() {
         std::getline(std::cin >> std::ws, input);
 
         int hash_result = simple_string_hash(input);
-        std::cout << "Simple hash of string ' " << input << " ' = " << hash_result << std::endl;
-      
+        std::cout << "Simple hash of string '" << input << "' = " << hash_result << std::endl;
+
         if (input == "exit") {
             break;
         }
